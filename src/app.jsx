@@ -25,7 +25,9 @@ const App = () => {
               <div className="image"></div>
               <div className="details">
                 <h3>IK MILES</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam cumque, itaque temporibus alias quae aut consectetur. Architecto ullam quis veniam doloremque harum quam modi aut, tempora sequi earum sapiente sit.</p>
+                <div className="info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam cumque, itaque temporibus alias quae aut consectetur. Architecto ullam quis veniam doloremque harum quam modi aut, tempora sequi earum sapiente sit.</p>
+                </div>
                 <div className="find_me"></div>
               </div>
             </main>

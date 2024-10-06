@@ -1,11 +1,27 @@
-import 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.App{
+    min-height: 300px;
+    background:linear-gradient(360deg,#d3d3d3,#808080);
+}
 nav{
-    min-height: 100vh;
-    background-color: blue;
+    display: flex;
+    padding: .3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .image{
+    width: 450px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: #800000;
 }
