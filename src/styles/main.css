@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.App{
+.header{
     min-height: 300px;
     background:linear-gradient(360deg,#d3d3d3,#808080);
 }

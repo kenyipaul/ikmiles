@@ -1,0 +1,137 @@
+.main-page-section {
+    padding: 1rem;
+}
+
+
+/* FIRST SECTION  */
+
+section:nth-child(1) {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-child(1) .content {
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-child(1) .content .main-frame {
+}
+
+section:nth-child(1) .content .main-frame video {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+section:nth-child(1) .content .video-frames {
+    gap: .5rem;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+
+section:nth-child(1) .content .video-frames .frame {
+    height: 100px;
+    padding: 1rem;
+    min-width: 150px;
+    border-radius: 1rem;
+    background: #eee;
+}
+
+/* SECOND SECTION  */
+
+section:nth-child(2) {
+    gap: 1rem;
+    display: flex;
+    margin: 1.5rem 0;
+    flex-direction: column;
+}
+
+
+section:nth-child(2) .beats-grid {
+    gap: .5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+section:nth-child(2) .beats-grid .beat {
+    gap: .5rem;
+    height: 100px;
+    padding: .5rem;
+    background: #fff;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid #00000010;
+    box-shadow: 5px 5px 15px #00000015;
+}
+
+section:nth-child(2) .beats-grid .beat .cover {
+    width: 100px;
+    height: 100%;
+    border-radius: 1rem;
+    background: #eee;
+}
+
+section:nth-child(2) .beats-grid .beat .content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section:nth-child(2) .beats-grid .beat .content h1 {
+    font-size: 1.1em;
+}
+
+section:nth-child(2) .beats-grid .beat .content p {
+    gap: .3rem;
+    display: flex;
+    color: #ff0053;
+    cursor: pointer;
+    font-weight: 550;
+    align-items: center;
+}
+
+section:nth-child(2) button {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: .9em;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    background: #9900ff;
+    justify-content: space-between;
+}
+
+
+/* THIRD SECTION  */
+
+section:nth-child(3) {
+    gap: 1rem;
+    display: flex;
+    margin: 1.5rem 0;
+    flex-direction: column;
+}
+
+section:nth-child(3) ul {
+    gap: .5rem;
+    display: grid;
+}
+
+section:nth-child(3) ul li {
+    padding: 1rem;
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    align-items: center;
+    border-radius: .5rem;
+    justify-content: space-between;
+    box-shadow: 3px 3px 15px #00000015;
+}

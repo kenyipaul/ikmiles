@@ -1,9 +1,10 @@
 import "./styles/main.css"
+import Main from "./components/main";
 
 const App = () => {
   return (
-    <div className='App'>
-          <div>
+    <div className='app'>
+          <div className="header">
             <nav>
               <div className="Search">
                   <input type="text" />
@@ -32,6 +33,9 @@ const App = () => {
               </div>
             </main>
           </div>
+
+
+          <Main />
     </div>
   )
 }
