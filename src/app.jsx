@@ -1,5 +1,6 @@
 import "./styles/main.css"
 import Main from "./components/main";
+import Footer from "./components/footer.jsx";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
 
 
           <Main />
+          <Footer />
     </div>
   )
 }
