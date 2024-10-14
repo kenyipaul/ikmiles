@@ -2,6 +2,9 @@ import './footer.css'
 import { FaChevronRight } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 const footer = () => {
   return (
     <div className='footer-container'>
@@ -50,6 +53,17 @@ const footer = () => {
                     </div>
                   
                 </ul>
+                <div className="socials">
+                    <div className="social-icon">
+                        <FaFacebookF fontSize={"20px"}/>
+                    </div>
+                    <div className="social-icon">
+                        <FaInstagram fontSize={"20px"}/>
+                    </div>
+                    <div className="social-icon">
+                        <FaXTwitter fontSize={"20px"}/>
+                    </div>
+                </div>
             </div>
         </div>
 

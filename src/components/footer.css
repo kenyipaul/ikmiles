@@ -82,6 +82,20 @@ li{
 .details-1 li a:hover{
     text-decoration: underline ;
 }
+.socials{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #fff;
+}
 @media (max-width: 1050px){
     .footer-container{
         display: flex;
