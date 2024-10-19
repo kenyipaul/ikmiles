@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+
+.sections {
+    display: grid;
+    margin: 5rem auto;
+    max-width: 1100px;
+
+    section {
+        &:nth-child(1) {
+            gap: .2rem;
+            display: grid;
+            overflow: hidden;
+
+            h1 { 
+                color: #535353;
+                font-size: 1.3em;
+                padding: .5rem 1rem; 
+                font-family: roboto;
+            }
+            
+            .main-frame {
+                padding: 0 .5rem;
+
+                video, iframe { 
+                    width: 100%; 
+                    border-radius: 1rem;
+                }
+            }
+
+            .frame-grid-container {
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+            
+                .arrow {
+                    width: 2rem;
+                    height: 2rem;
+                    cursor: pointer;
+                    position: absolute;
+                    
+                    &.arrow-left { top: 50%; left: 1rem; transform: translateY(-50%); }
+                    &.arrow-right { top: 50%; right: 1rem; transform: translateY(-50%); }
+                }
+            }
+
+            .frame-grid {
+                gap: .5rem;
+                display: flex;
+                padding-left: .5rem;
+                overflow-x: scroll;
+                scrollbar-width: none;
+
+                .frame {
+                    // height: 100px;
+                    // min-width: 150px;
+                    aspect-ratio: 12/7;
+                    border-radius: 1rem;
+                    background: #ddd;
+                }
+            }
+        }
+
+
+        &:nth-child(2) {
+            padding: 1rem;
+
+            .title {
+                color: #535353;
+                font-size: 1.3em;
+                margin: .5rem 0 1rem 0;
+                font-family: roboto;
+            }
+
+            .beat-grid {
+                gap: .5rem;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+                .beat {
+                    gap: 1rem;
+                    padding: .5rem;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 1rem;
+                    background: #eee;
+                    
+                    .cover {
+                        width: 100px;
+                        height: 80px;
+                        background: #fff;
+                        border-radius: 1rem;
+                    }
+
+                    .content {
+                        height: 100%;
+                        display: flex;
+                        padding: .5rem 0;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    
+                        h1 {
+                            font-size: 1.05em;
+                            font-weight: 900;
+                        }
+
+                        p {
+                            gap: .3rem;
+                            display: flex;
+                            font-size: .9em;
+                            cursor: pointer;
+                            font-weight: 900;
+                            color: #ff0053;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width: 1000px) {
+    
+    .sections section:nth-child(1) {
+        gap: 0;
+        display: grid;
+        grid-template-columns: [col-start] 1fr [col-end] 240px;
+    
+        .frame-grid-container {
+            height: 100%;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+        }
+
+        .frame-grid {
+            padding: 0;
+            height: 100%;
+            overflow-y: scroll;
+            border-radius: 1rem;
+            flex-direction: column;
+        
+            .frame {
+                min-height: 150px;
+            }
+        }
+
+        .arrow {        
+            &.arrow-left { display: none; }
+            &.arrow-right { display: none; }
+        }
+    }
+
+}

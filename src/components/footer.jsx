@@ -1,4 +1,4 @@
-import './footer.css'
+import './styles/footer.css'
 import { FaChevronRight } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";

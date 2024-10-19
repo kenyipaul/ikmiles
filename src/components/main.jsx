@@ -1,53 +1,46 @@
-import "./style.css";
+import "./styles/main.scss";
 
 export default function Main() {
     return (
-        <div className="main-page-section">
-
-            <section>
-                <div className="top-bar">
-                    <h1>Featured Videos</h1>
-                </div>
-                <div className="content">
-                    <div className="main-frame">
-                        <video src="" controls></video>
-                    </div>
-                    <div className="video-frames">
-                        <div className="frame"></div>
-                        <div className="frame"></div>
-                        <div className="frame"></div>
-                        <div className="frame"></div>
-                        <div className="frame"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div className="top-bar">
-                    <h1>Popular IK Miles Beats</h1>
-                </div>
-                <div className="beats-grid">
-                    <Beat />
-                    <Beat />
-                    <Beat />
-                    <Beat />
-                    <Beat />
-                    <Beat />
-                </div>
-                <button>View All Beats <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 12H20M20 12L17 9M20 12L17 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> </svg></button>
-            </section>
-
-            <section>
-                <div className="top-bar">
-                    <h1>Frequently Asked Questions</h1>
-                </div>
-                <ul>
-                    <li>When did IK Miles start making music? <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="arrow-ios-downward"><rect width="24" height="24" opacity="0"/><path d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16z"/></g></g></svg></li>
-                    <li>When did IK Miles start making music? <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="arrow-ios-downward"><rect width="24" height="24" opacity="0"/><path d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16z"/></g></g></svg></li>
-                </ul>
-            </section>
+        <div id="article">
         
+        <div className="sections">
+            <section>
+                <div className="main-frame">
+                    <iframe width="752" height="423" src="https://www.youtube.com/embed/Os2tW8nbvxM" title="Super Woman _ Ik Miles Ft Tafa tafe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div className="frame-grid-container">
+                    <svg className="arrow arrow-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="arrow-circle-left"><rect width="24" height="24" opacity="0"/><path d="M16 11h-5.66l1.25-1.31a1 1 0 0 0-1.45-1.38l-2.86 3a1 1 0 0 0-.09.13.72.72 0 0 0-.11.19.88.88 0 0 0-.06.28L7 12a1 1 0 0 0 .08.38 1 1 0 0 0 .21.32l3 3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L10.41 13H16a1 1 0 0 0 0-2z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/></g></g></svg>
+                    <div className="frame-grid">
+                        <iframe className="frame" src="https://www.youtube.com/embed/Os2tW8nbvxM" title="Super Woman _ Ik Miles Ft Tafa tafe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe className="frame" src="https://www.youtube.com/embed/Os2tW8nbvxM" title="Super Woman _ Ik Miles Ft Tafa tafe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe className="frame" src="https://www.youtube.com/embed/Os2tW8nbvxM" title="Super Woman _ Ik Miles Ft Tafa tafe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe className="frame" src="https://www.youtube.com/embed/Os2tW8nbvxM" title="Super Woman _ Ik Miles Ft Tafa tafe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe className="frame" src="https://www.youtube.com/embed/Os2tW8nbvxM" title="Super Woman _ Ik Miles Ft Tafa tafe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <svg className="arrow arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="arrow-circle-right"><rect width="24" height="24" transform="rotate(-90 12 12)" opacity="0"/><path d="M17 12v-.09a.88.88 0 0 0-.06-.28.72.72 0 0 0-.11-.19 1 1 0 0 0-.09-.13l-2.86-3a1 1 0 0 0-1.45 1.38L13.66 11H8a1 1 0 0 0 0 2h5.59l-1.3 1.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3-3a1 1 0 0 0 .21-.32A1 1 0 0 0 17 12z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/></g></g></svg>
+                </div>
+            </section>
+
+            <section>
+                <h1 className="title">Popular IK Miles Beats</h1>
+                <div className="beat-grid">
+                    
+                    <Beat />
+                    <Beat />
+                    <Beat />
+                    <Beat />
+                    <Beat />
+                    <Beat />
+
+                </div>
+            </section>
         </div>
+
+        <div>
+            
+        </div>
+    </div>
     )
 }
 
