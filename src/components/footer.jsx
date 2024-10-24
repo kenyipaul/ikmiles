@@ -1,8 +1,8 @@
 import './styles/footer.css'
 import { FaChevronRight } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import { FaPhone,FaXTwitter } from "react-icons/fa6";
-import { FaFacebookF,FaInstagram  } from "react-icons/fa";
+import { FaPhone , FaTiktok } from "react-icons/fa6";
+import { FaFacebookF,FaInstagram } from "react-icons/fa";
 import profile from '../styles/channels4_profile.jpg'
 const footer = () => {
   return (
@@ -53,16 +53,19 @@ const footer = () => {
                     </ul>
                     <div className="socials">
                         <div className="social-icon">
-                            <a href="#"></a>
-                            <FaFacebookF fontSize={"20px"}/>
+                            <a href="https://www.facebook.com/profile.php?id=100082900554180">
+                                <FaFacebookF fontSize={"20px"}/>
+                            </a>
+                        </div> 
+                        <div className="social-icon">
+                            <a href="https://www.tiktok.com/@ikmiles1">
+                                <FaTiktok fontSize={"20px"}/>
+                            </a>
                         </div>
                         <div className="social-icon">
-                            <a href="#"></a>
-                            <FaInstagram fontSize={"20px"}/>
-                        </div>
-                        <div className="social-icon">
-                            <a href="#"></a>
-                            <FaXTwitter fontSize={"20px"}/>
+                            <a href="https://www.instagram.com/ik_miles2/profilecard/?igsh=MTZvMGFhbXY2Mzc3ag==">
+                                <FaInstagram fontSize={"20px"}/>
+                            </a>
                         </div>
                     </div>
                 </div>
