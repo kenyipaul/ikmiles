@@ -21,7 +21,6 @@ nav{
   margin: 1.5rem 0rem;
   border-radius: 1rem;
   padding: 1.5rem 2rem;
-  border: 2px solid rgb(201, 201, 201);
   justify-content: space-between;
   grid-template-columns: .5fr 1fr;
   background-color: #eeecec;

@@ -14,9 +14,6 @@ export default function Header(){
                 <diV className="title">
                     <h1>MILES<sub>MUSIC</sub></h1>
                 </diV>
-                <div className="title">
-                    <h1>MILES<sub>MUSIC</sub></h1>
-                </div>
                     <div className="links">
                         <li>VIDEOS</li>
                         <li>FEATURED</li>
