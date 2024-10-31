@@ -6,13 +6,12 @@ export default function Header(){
     function changeDark() {
         document.body.classList.toggle("dark-theme");
     }
-
     return (
         <header>
             <nav>
 
                 <diV className="title">
-                    <h1>MILES<sub>MUSIC</sub></h1>
+                    <h1>MILES MUSIC</h1>
                 </diV>
                     <div className="links">
                         <li>VIDEOS</li>
@@ -21,8 +20,8 @@ export default function Header(){
                         <li>PROMOTE YOUR MUSIC</li>
                     </div>
                     <div className="lower">
-                        {/* <input type="button" value="SignUp"/> */}
-                        <FaMoon onClick={changeDark} id="dark" fontSize={"1.5rem"}/>
+                    
+                        <FaMoon onClick={changeDark} id="dark" fontSize={"1.5rem"} className="moon"/>
                         <FaSearch className="search_btn" />
                     </div>
                 <IoIosMenu className="menu_icon"/>
