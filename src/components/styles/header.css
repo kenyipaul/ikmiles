@@ -24,6 +24,12 @@ nav{
   border: 2px solid rgb(201, 201, 201);
   justify-content: space-between;
   grid-template-columns: .5fr 1fr;
+  background-color: #eeecec;
+  justify-content: space-between;
+  grid-template-columns: .5fr 1fr;
+}
+.dark-theme nav{
+  background-color: #1d1d1d;
 }
 nav .title{
   margin-top: .8rem;
@@ -39,10 +45,24 @@ nav .links li{
   padding: 1rem;
   border-radius: 1rem;
   color: var(--font_colors);
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 900;
+  border-radius: 1rem;
+  color: #535353;
 }
 nav .links li:hover{
   cursor: pointer;
   background: #dbdbdb;
+  color: var(--text_color);
+  transition: 0.6s ease-in-out;
+}
+.dark-theme nav .links li:hover{
+  background-color: #2e2d2d;
+  color: var(--font_colors);
+}
+.dark-theme nav .links li{
+  color: var(--ligth-mode);
 }
 
 nav .lower{
@@ -61,8 +81,17 @@ nav .lower{
 nav .lower .search_btn{
   font-size: 1.3rem;
 }
+nav .lower .search_btn{
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--text_color);
+}
 .dark-theme nav .lower .search_btn{
   color: var(--ligth-mode);
+}
+.dark-theme nav .lower .search_btn:hover{
+  transition: 0.8s ease-in-out;
+  color: var(--font_colors);
 }
 .personal_details{
   display: grid;
@@ -75,6 +104,7 @@ nav .lower .search_btn{
   height: 200px;
   overflow: hidden;
   border-radius: 3rem;
+  border-radius: 50%;
 }
 .personal_details .profile-img img{
   width: 200px;
@@ -88,6 +118,10 @@ nav .lower .search_btn{
   padding-bottom: 1rem;
   color: var(--font_colors);
 }
+.about p{
+  font-size: 1.1rem;
+}
+
  .dark-theme .about p{
   color: var(--ligth-mode);
 }
@@ -104,10 +138,19 @@ nav .lower .search_btn{
   align-items: center;
   padding: 1rem 1.5rem;
 }
+
 .about button h3{
   font-size: 1.2rem;
 }
-
+.dark-theme .about button{
+  background: #1d1d1d;
+}
+.about button h3{
+  font-size: 1.2rem;
+}
+.dark-theme .about button h3{
+  color: var(--ligth-mode);
+}
 
 .menu_icon{
   display: none;
@@ -116,5 +159,22 @@ nav .lower .search_btn{
 @media (width <= 800px) {
   .personal_details{
       grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  }
+  
+  nav .links{
+    display: none;
+  }
+  nav .lower{
+    display: none;
+  }
+  .about{
+    padding: 0rem;
+  }
+  .menu_icon{
+    font-size: 2.8rem;
+    display: block;
+  }
+  .personal_details{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
   }
 }
