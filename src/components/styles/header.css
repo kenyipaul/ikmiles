@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root{
+  --font_colors: #9900ff;
+  --text_color: #6d1ba4;
+  --ligth-mode:#e7e7e7;
+}
+.dark-theme{
+  background: #101010;
+}
+header{
+  margin: auto;
+  max-width: 1100px;
+}
+nav{
+  display: flex;
+  margin: 1.5rem 0rem;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  border: 2px solid rgb(201, 201, 201);
+  justify-content: space-between;
+  grid-template-columns: .5fr 1fr;
+}
+nav .title{
+  margin-top: .8rem;
+  font-size: 1rem;
+  color: var(--text_color);
+}
+nav .links{
+  display: flex;
+}
+nav .links li{
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--font_colors);
+}
+nav .links li:hover{
+  cursor: pointer;
+  background: #dbdbdb;
+}
+
+nav .lower{
+  gap: 1.5rem;
+  display: flex;
+  margin-top: .4rem;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+/* nav .lower input{
+  border: none;
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: .8rem 1.5rem;
+} */
+nav .lower .search_btn{
+  font-size: 1.3rem;
+}
+.dark-theme nav .lower .search_btn{
+  color: var(--ligth-mode);
+}
+.personal_details{
+  display: grid;
+  grid-gap: 1.5rem;
+  margin: 2.5rem 4rem;
+  grid-template-columns: max-content 1fr;
+}
+.personal_details .profile-img{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 3rem;
+}
+.personal_details .profile-img img{
+  width: 200px;
+  height: 200px;
+}
+.about{
+  padding: 1rem 0rem;
+}
+.about div h3{
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+  color: var(--font_colors);
+}
+ .dark-theme .about p{
+  color: var(--ligth-mode);
+}
+.about a{
+  text-decoration: none;
+}
+.about button{
+  gap: .5rem;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.about button h3{
+  font-size: 1.2rem;
+}
+
+
+.menu_icon{
+  display: none;
+}
+
+@media (width <= 800px) {
+  .personal_details{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  }
+}

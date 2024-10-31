@@ -1,4 +1,4 @@
-import "./styles/main.scss";
+import "/src/components/styles/main.scss";
 
 export default function Main() {
     return (

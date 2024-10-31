@@ -3,7 +3,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaPhone , FaTiktok } from "react-icons/fa6";
 import { FaFacebookF,FaInstagram } from "react-icons/fa";
-import profile from '../styles/channels4_profile.jpg'
+import profile from '/src/images/channels4_profile.jpg'
 const footer = () => {
   return (
     <div className='footer-container'>
